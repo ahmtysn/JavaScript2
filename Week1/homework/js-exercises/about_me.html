@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>About Me</title>
-    <style>
-      /* 5.(In the HTML head) Add a style tag that sets a rule for .list - item to make the color red. */
-      .list-item {
-        color: red;
-      }
-    </style>
-  </head>
 
-  <body>
-    <h1>About Me</h1>
+<head>
+  <meta charset="utf-8" />
+  <title>About Me</title>
+  <style>
+    /* 5.(In the HTML head) Add a style tag that sets a rule for .list - item to make the color red. */
+    .list-item {
+      color: red;
+    }
+  </style>
+</head>
 
-    <ul>
-      <li>Nickname: <span id="nickname"></span></li>
-      <li>Favorite food: <span id="fav-food"></span></li>
-      <li>Hometown: <span id="hometown"></span></li>
-    </ul>
+<body>
+  <h1>About Me</h1>
 
-    <script>
-      // 1. Add a script tag to the bottom of the HTML body.
-      // 2.(In the JavaScript) Change the body tag's style so it has a font-family of "Arial, sans-serif".
-      document.body.style.fontFamily = 'Arial, sans-serif';
-      // 3.(In the JavaScript) Replace each of the spans(nickname, fav - food, hometown) with your own information.
-      let nickName = document.getElementById('nickname');
-      let favFood = document.getElementById('fav-food');
-      let homeTown = document.getElementById('hometown');
-      nickName.innerText = 'AhmtysN';
-      favFood.innerText = 'Baklava';
-      homeTown.innerText = 'Adana';
-      // 4. Iterate through each li and change the class to "list-item".
-      let lis = document.querySelectorAll('li');
-      for (let li of lis) {
-        li.className = 'list-item';
-      }
-      // 6. Create a new img element and set its src attribute to a picture of you.Append that element to the page.
-      let img = document.createElement('img');
-      img.src = './a3.jpeg';
-      img.style.width = '250px';
-      document.body.appendChild(img);
-    </script>
-  </body>
+  <ul>
+    <li>Nickname: <span id="nickname"></span></li>
+    <li>Favorite food: <span id="fav-food"></span></li>
+    <li>Hometown: <span id="hometown"></span></li>
+  </ul>
+
+  <script>
+    // 1. Add a script tag to the bottom of the HTML body.
+    // 2.(In the JavaScript) Change the body tag's style so it has a font-family of "Arial, sans-serif".
+    document.body.style.fontFamily = 'Arial, sans-serif';
+    // 3.(In the JavaScript) Replace each of the spans(nickname, fav - food, hometown) with your own information.
+    let nickName = document.getElementById('nickname');
+    let favFood = document.getElementById('fav-food');
+    let homeTown = document.getElementById('hometown');
+    nickName.innerText = 'AhmtysN';
+    favFood.innerText = 'Baklava';
+    homeTown.innerText = 'Adana';
+    // 4. Iterate through each li and change the class to "list-item".
+    let lis = document.querySelectorAll('li');
+    for (let li of lis) {
+      li.className = 'list-item';
+    }
+    // 6. Create a new img element and set its src attribute to a picture of you.Append that element to the page.
+    let img = document.createElement('img');
+    img.src = './img/profil.jpeg';
+    img.style.width = '250px';
+    document.body.appendChild(img);
+  </script>
+</body>
+
 </html>
