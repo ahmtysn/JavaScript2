@@ -1,6 +1,7 @@
 // 2. Create a JavaScript file called`showCurrentTime.js` and include it in the HTML file
-// 3. Inside the JS file, write a function that adds the current time to the webpage.Make sure it's written in the HH:MM:SS notation (hour, minute, second). Hint: use `setInterval()` to make sure the time stays current
+// 3. Inside the JS file, write a function that adds the current time to the webpage.
 // 4. Have the function execute when it's loading in the browser
+
 const hourPlace = document.querySelector("#hour");
 const minPlace = document.querySelector("#min");
 const secondPlace = document.querySelector("#second");
