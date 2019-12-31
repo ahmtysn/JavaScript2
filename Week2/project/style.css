@@ -3,6 +3,7 @@
   margin: 0px;
   padding: 0px;
   text-align: center;
+  -webkit-user-select: none;
 }
 .main {
   height: 100vh;
@@ -10,7 +11,12 @@
   color: #fff;
   font-family: 'PT Serif', serif;
 }
-#input {
+input {
+  font-weight: bold;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+}
+#twentyFive {
   display: inline;
   font-size: 2rem;
   margin: 0 10px;
