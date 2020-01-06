@@ -11,9 +11,16 @@ const myHobbies = [
 // Use the`map` and / or`forEach` function to put each hobby into a list item
 // Output the list items in an unordered list
 
+const main = document.getElementById('main');
+const title = document.createElement('h1');
+title.textContent = 'My Hobbies';
+const hobbyList = document.createElement('ul');
+
+main.appendChild(title);
+main.appendChild(hobbyList);
+
 myHobbies.forEach(hobby => {
-  const ul = document.querySelector('ul');
-  const li = document.createElement('li');
-  li.textContent = hobby;
-  ul.appendChild(li);
+  const line = document.createElement('li');
+  line.textContent = hobby;
+  hobbyList.appendChild(line);
 });

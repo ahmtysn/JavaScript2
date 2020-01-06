@@ -25,9 +25,10 @@ const mondayTasks = [
 
 function calcMoney(tasks) {
   if (tasks.every(task => !isNaN(task.duration))) {
-    const durationHour = mondayTasks.map(task => task.duration / 60);
-    const total = durationHour.reduce((total, hour) => total + hour * 25, 0);
-    return `All earned money for monday is €${total}..`;
+    const durationHourList = tasks.map(task => task.duration / 60);
+    const totalHour = durationHourList.reduce((total, hour) => total + hour, 0);
+    const totalEarnedMoney = totalHour * 25;
+    return `All earned money for monday is €${totalEarnedMoney}..`;
   } else {
     return `Write values of duration as a number, please!!`;
   }

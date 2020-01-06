@@ -12,9 +12,11 @@ const hackYourFutureMembers = [
 // The main function should log the string "The collective age of the HYF team is: [number]" to the console, and afterwards return the number
 
 function combinedAge(members) {
-  const ages = members.map(member => member.age);
-  const totalAges = ages.reduce((total, age) => total + age, 0);
+  const agesList = members.map(member => member.age);
+  const totalAges = agesList.reduce((total, age) => total + age, 0);
+  const average = totalAges / members.length;
   console.log(`The collective age of the HYF team is: ${totalAges}`);
+  console.log(`The average age of the HYF team is: ${average}.`);
   return totalAges;
 }
 console.log(combinedAge(hackYourFutureMembers));
